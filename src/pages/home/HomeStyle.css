@@ -1,0 +1,53 @@
+.container-home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 6.5rem;
+}
+.container-home img{
+    max-width: 10rem;
+    border-radius: 50%;
+}
+.container-home-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;  
+}
+.container-home-text p {
+    font-size: 1rem;
+    margin-top: 5px;
+}
+.container-home-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.my-button-projetos {
+    border-color: #3479f0;
+    background-color: transparent;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+.my-button-curriculo {
+    border-color: #3479f0;
+    background-color: transparent;
+    color: #fff;
+    padding: 10px 20px;
+    margin: 30px 0px 30px 0px;
+    border-radius: 20px;
+}
+
+.my-button-projetos:hover {
+    background-color: #255ec1;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+.my-button-curriculo:hover {
+    background-color: #255ec1;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}

@@ -1,0 +1,131 @@
+.container-contact-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3rem;
+    background-color: #fff;
+}
+.container-contact{
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.905);
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+.container-contact h1 {
+    color: #000;
+    font-size: 40px;
+    text-align: center;
+    margin: 10px;
+}
+.container-form-contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    border-radius: 10px;
+    
+    background-color: #f9f9f9;
+}
+.form-contact {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+    width: 100%;
+}
+.form-contact label {
+    color: #000;
+    font-size: 1rem;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.form-contact input{
+    padding: 10px;
+    border: 1px solid #4c4c4cbd;
+    border-radius: 5px;
+    font-size: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+.form-contact textarea {
+    padding: 10px;
+    border: 1px solid #4c4c4cbd;
+    border-radius: 5px;
+    font-size: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    height: 100px;
+}
+.form-contact button {
+    background-color: #3479f0;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.form-contact button:hover {
+    background-color: #255ec1;
+    transition: background-color 0.3s ease;
+}
+.container-icons-contact {
+    display: flex;
+    background-color: #4c4c4c;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.icons-contact {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 40px 10px 10px;
+    gap: 30px;
+}
+.icons-contact svg {
+    cursor: pointer;
+}
+.icons-contact svg:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+.footer-premium {
+    color: #fff;
+    font-size: 0.9rem;
+    padding: 10px;
+    margin-left: 20px;  
+}
+.footer-premium p {
+    margin: 0;
+}
+.footer-premium p:hover {
+    color: #3479f0;
+    transition: color 0.3s ease;
+}
+.success-message {
+  color: #3479f0;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+  animation: fadeIn 0.4s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-5px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 600px) {
+   .container-contact h1 {
+    color: #000;
+    font-size: 30px;
+    text-align: center;
+    margin: 10px;
+}
+    .form-contact {
+     width: 100%;
+    }
+
+}
