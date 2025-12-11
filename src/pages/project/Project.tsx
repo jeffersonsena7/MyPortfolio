@@ -7,12 +7,12 @@ import { DefaultButton } from '../../components/defaultButton/DefaultButton';
 export const Project: React.FC = () => {
   // Lista de vídeos (coloque seus vídeos na pasta public/videos/)
   const videos = [
-    "/src/assets/Buscador-web.mp4",
-    "/src/assets/Buscador-mobile.mp4",
-    "/src/assets/Academia2.mp4",
-    "/src/assets/Suplementos.mp4",
-    "/src/assets/Buzz.mp4",
-    "/src/assets/Blog-Angular.mp4",
+    "/downloands/Buscador-web.mp4",
+    "/downloands/Buscador-mobile.mp4",
+    "/downloands/Academia2.mp4",
+    "/downloands/Suplementos.mp4",
+    "/downloands/Buzz.mp4",
+    "/downloands/Blog-Angular.mp4",
   ];
 
   return (
