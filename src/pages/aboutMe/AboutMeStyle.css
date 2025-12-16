@@ -41,8 +41,9 @@
 .container-aboutMe-certificados-images{
     display: flex;
     margin-top: 40px;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: space-between;
+    overflow: hidden;
 }
 .image-certificado{
     margin: 10px 0px 0px 4vw;
@@ -61,6 +62,64 @@
     transition: transform 0.9s ease;  
     box-shadow: 0px 0px 10px 5px #255ec1;
 }
+
+.swiper-carrosel {
+  width: 100%;
+  overflow: hidden;
+}
+
+.swiper-wrapper {
+  display: flex;
+  flex-wrap: nowrap; /* nunca quebra linha */
+}
+
+.swiper-slide {
+  flex: 0 0 auto; /* mantém o tamanho do slide */
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.carrossel-infinito {
+  overflow: hidden;
+  width: 100%;
+  
+}
+
+.carrossel-track {
+max-width: 98.5vw;
+  padding-bottom: 10px;  
+  display: flex;
+  flex-wrap: nowrap; /* nunca quebra linha */
+  animation: slide 20s infinite; /* rotação contínua */
+}
+
+.carrossel-track img {
+  flex: 0 0 auto;
+  height: 200px;
+  margin-right: 20px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.carrossel-track img:hover {
+    box-shadow: 10px 10px 10px solid #255ec1;
+    cursor: pointer;
+    border-color: 10px solid #255ec1;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%); /* metade da faixa, por isso duplicamos */
+  }
+}
+
 
 @media (min-width: 460px) and (max-width: 580px) {
     .container-aboutMe-content {

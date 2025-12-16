@@ -3,6 +3,9 @@ import React from 'react';
 
 import './ProjectStyle.css';
 import { DefaultButton } from '../../components/defaultButton/DefaultButton';
+import { Carrosel } from '../../components/carrosel/Carrosel';
+
+
 
 export const Project: React.FC = () => {
   // Lista de vídeos (coloque seus vídeos na pasta public/videos/)
@@ -22,8 +25,8 @@ export const Project: React.FC = () => {
           Project Page
         </h1>
       </section>        
-
-      <div className="images-row">        
+      <div className="images-row"> 
+        <Carrosel>     
         <div className='img-project'>
           <video src={videos[0]} controls />         
           <h1>Buscador de Tag & Descrição</h1>
@@ -135,8 +138,9 @@ export const Project: React.FC = () => {
             >
               Ir para o projeto
             </DefaultButton>
-          </div>
-      </div>        
+          </div> 
+          </Carrosel>       
+      </div>       
     </div>
   );
 };
