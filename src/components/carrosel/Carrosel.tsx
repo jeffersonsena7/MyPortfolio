@@ -11,7 +11,6 @@ export const Carrosel: React.FC<CarroselProps> = ({ children }) => {
   const [visible, setVisible] = useState(1);
   const [autoplay, setAutoplay] = useState(true);
 
-  // RESPONSIVO
   useEffect(() => {
     const updateVisible = () => {
       const width = window.innerWidth;
@@ -29,7 +28,6 @@ export const Carrosel: React.FC<CarroselProps> = ({ children }) => {
   const slideWidth = 100 / visible;
   const totalDots = maxIndex + 1;
 
-  // AUTOPLAY
   useEffect(() => {
     if (!autoplay) return;
 
@@ -41,7 +39,11 @@ export const Carrosel: React.FC<CarroselProps> = ({ children }) => {
   }, [autoplay, maxIndex]);
 
   return (
-    <div className="carrosel-containel">
+    <div
+      className="carrosel-containel"
+      onMouseEnter={() => setAutoplay(false)}
+      onMouseLeave={() => setAutoplay(true)}
+    >
       <div
         className="carrosel-slide"
         style={{ transform: `translateX(-${index * slideWidth}%)` }}
@@ -51,13 +53,13 @@ export const Carrosel: React.FC<CarroselProps> = ({ children }) => {
             className="slide"
             key={i}
             style={{ flex: `0 0 ${slideWidth}%` }}
+            onClick={() => setAutoplay(false)}
           >
             {slide}
           </div>
         ))}
       </div>
 
-      {/* DOTS */}
       <div className="dots">
         {Array.from({ length: totalDots }).map((_, i) => (
           <span

@@ -50,6 +50,7 @@
   display: flex;
   padding: 20px 3vw; 
   transition: all 100s ease;
+  
 }
 .container-hamburger {
   display: flex;
@@ -64,7 +65,7 @@
   flex-direction: column;
   align-items: flex-start;
   width: 100%;
-  margin-top: 55.2px;
+  margin-top: 55px;
   padding: 0;
   background-color: #11111186;
   transition: color 1.5s ease;

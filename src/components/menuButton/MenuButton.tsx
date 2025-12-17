@@ -23,16 +23,16 @@ export const MenuButton = () => {
             <div className={`container-buttons ${menuOpen ? 'open' : 'close'}`}>
                 <div className='text-button'>
                     <button onClick={() => scrollToSection('Home')}>
-                        Home
+                        Inicio
                     </button>
                     <button onClick={() => scrollToSection('AboutMe')}>
-                        About Me
+                        Sobre mim
                     </button>
                     <button onClick={() => scrollToSection('Project')}  >
-                        Projects
+                        Projetos
                     </button>
                     <button onClick={() => scrollToSection('Contact')}>
-                        Contact
+                        Contatos
                     </button>
                 </div>      
             </div>

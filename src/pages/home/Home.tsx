@@ -32,7 +32,7 @@ export const Home = () => {
                 </DefaultButton>
 
                 <a 
-                    href="/downloands/JS - curriculo atualizado 2026-2.pdf" download="JS - curriculo atualizado 2026-2.pdf"
+                    href="/videos/JS - curriculo atualizado 2026-2.pdf" download="JS - curriculo atualizado 2026-2.pdf"
                 >
                 <DefaultButton className="my-button-curriculo">
                     Download Currículo

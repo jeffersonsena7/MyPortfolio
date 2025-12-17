@@ -10,19 +10,19 @@ import { Carrosel } from '../../components/carrosel/Carrosel';
 export const Project: React.FC = () => {
   // Lista de vídeos (coloque seus vídeos na pasta public/videos/)
   const videos = [
-    "/downloands/Buscador-web.mp4",
-    "/downloands/Buscador-mobile.mp4",
-    "/downloands/Academia2.mp4",
-    "/downloands/Suplementos.mp4",
-    "/downloands/Buzz.mp4",
-    "/downloands/Blog-Angular.mp4",
+    "/videos/Buscador-web.mp4",
+    "/videos/Buscador-mobile.mp4",
+    "/videos/Academia2.mp4",
+    "/videos/Suplementos.mp4",
+    "/videos/Buzz.mp4",
+    "/videos/Blog-Angular.mp4",
   ];
 
   return (
     <div className="container-project">
       <section id="Project">
         <h1>
-          Project Page
+          Projetos
         </h1>
       </section>        
       <div className="images-row"> 
@@ -57,7 +57,7 @@ export const Project: React.FC = () => {
               Tecnologias: React Native, Node.js, Express, REST API, Render, Banco de Dados.
             </p> 
             <a 
-              href="/downloands/meu-app.apk" 
+              href="/videos/meu-app.apk" 
               download='meu-app.apk'
             >
               <DefaultButton className='button-project'         
