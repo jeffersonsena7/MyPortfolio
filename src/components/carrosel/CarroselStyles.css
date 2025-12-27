@@ -1,15 +1,32 @@
 .carrosel-containel {
   position: relative;
   overflow: hidden;
-  width: 100%;
+  width: 90%;
   max-width: 900px;
   margin: 0 auto;
 }
 
+/* .carrosel-slide {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+} */
 .carrosel-slide {
   display: flex;
   transition: transform 0.5s ease-in-out;
+  touch-action: pan-y;
+  user-select: none;
+  cursor: grab;
 }
+
+.carrosel-slide:active {
+  cursor: grabbing;
+}
+
+.slide video {
+  max-width: 100%;
+  pointer-events: auto;
+}
+
 
 .slide {
   display: flex;
