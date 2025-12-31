@@ -135,6 +135,7 @@
 }
 
 .container-home-button {
+  margin-bottom: 10vh;
     display: flex;
     justify-content: center;
     align-items: center;
