@@ -1,7 +1,7 @@
 .container-home {
   position: relative;
   width: 100%;
-  max-width: 300px;
+  max-width: 500px;
   height: 300px;
   perspective: 1000px; /* necessário para 3D */
   margin: 0 auto;
@@ -18,10 +18,10 @@
 .container-home .flip-card img {
   position: absolute;
   top: 30%;
-  left: 15%;
-  width: 20vw;
-  height: 45vh;
-  object-fit: cover;
+  left: 30%;
+  width: 38%;
+  height: 65%;
+  object-fit: cover;  
   border-radius: 50%;
   backface-visibility: hidden; /* esconde o verso quando não está virado */
 }
@@ -86,7 +86,7 @@
 .container-home {
   position: relative;
   width: 100%;
-  max-width: 300px;
+  max-width: 500px;
   height: 300px;
   perspective: 1000px; /* necessário para 3D */
   margin: 0 auto;
@@ -102,10 +102,10 @@
 
 .container-home .flip-card img {
   position: absolute;
-  top: 20vh;
+  top: 30%;
   left: 18%;
-  width: 50vw;
-  height: 30vh;
+  width: 58%;
+  height: 75%;
   object-fit: cover;
   border-radius: 50%;
   backface-visibility: hidden; /* esconde o verso quando não está virado */
