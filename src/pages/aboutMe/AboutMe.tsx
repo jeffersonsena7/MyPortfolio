@@ -7,6 +7,7 @@ import front from '../../assets/front.jpeg'
 import frontAngular from '../../assets/front-angular.jpeg'
 
 import foto from '../../assets/perfil.jpeg'
+import { Carrosel } from '../../components/carrosel/Carrosel'
 
 export const AboutMe = () => {
 
@@ -29,26 +30,49 @@ export const AboutMe = () => {
         </div>
         <div className='container-aboutMe-certificados'>
           <h2>Meus Certificados</h2>
-          <div className='container-aboutMe-certificados-images'>
-            <div className="carrossel-infinito">
+
+          <div className='carrosel-infinit'> 
+            <Carrosel>              
               <div className="carrossel-track">
                 <img src={ReactImg} alt="" />
-                <img src={Node} alt="" />
-                <img src={Angular} alt="" />
-                <img src={Ciber} alt="" />
-                <img src={front} alt="" />
-                <img src={frontAngular} alt="" />
-                {/* repetir para efeito contínuo */}
-                <img src={ReactImg} alt="" />
-                <img src={Node} alt="" />
-                <img src={Angular} alt="" />
-                <img src={Ciber} alt="" />
-                <img src={front} alt="" />
-                <img src={frontAngular} alt="" />
               </div>
-            </div>
-
+                <div className="carrossel-track">
+                  <img src={Node} alt="" />
+                </div>
+                <div className="carrossel-track">
+                  <img src={Angular} alt="" />
+                </div>
+                <div className="carrossel-track">
+                  <img src={Ciber} alt="" />
+                </div>
+                <div className="carrossel-track">
+                  <img src={front} alt="" />
+                </div>
+                <div className="carrossel-track">
+                  <img src={frontAngular} alt="" />
+                </div>
+                {/* repetir para efeito contínuo */}
+                <div className="carrossel-track">
+                  <img src={ReactImg} alt="" />
+                </div>
+                <div className="carrossel-track">
+                  <img src={Node} alt="" />
+                </div>
+                <div className="carrossel-track">
+                  <img src={Angular} alt="" />
+                </div>
+                <div className="carrossel-track">
+                  <img src={Ciber} alt="" />
+                </div>
+                <div className="carrossel-track">
+                  <img src={front} alt="" />
+                </div>
+                <div className="carrossel-track">
+                  <img src={frontAngular} alt="" />
+                </div>            
+            </Carrosel>
           </div>
+          
         </div>
       </div>
     </section>
